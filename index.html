@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <h2>О компании</h2>
+            <div class="d-flex">
+                <img src="img//logo.svg" alt="logo">
+                <p class="title-text">Европейская Юридическая Служба была основана в 2007 году, создав на рынке новую товарную категорию круглосуточной дистанционной юридической поддержки. Компания стала первой, предложившей рынку онлайн услугу юридической профилактики по всем видам права.</p>
+            </div>
+            <div class="">
+                <div class="sl_slick">
+                    <div class="slider one">
+                        <p class="sl title">15 000</p>
+                        <p class="content">точек продаж
+                        </p>
+                    </div>
+                    <div class="slider two">
+                        <p class="sl title">8</p>
+                        <p class="content">стран присутствия
+                            сервиса</p>
+                    </div>
+                    <div class="slider three">
+                        <p class="sl title">4 500 000</p>
+                        <p class="content">консультаций</p>
+                    </div>
+                    <div class="slider four">
+                        <p class="sl title">3 000 000</p>
+                        <p class="content">пользователей</p>
+                    </div>
+                    <div class="slider five">
+                        <p class="sl title">150</p>
+                        <p class="content">корпоративных
+                            партнеров</p>
+                    </div>
+                    <div class="slider six">
+                        <p class="sl title">2007</p>
+                        <p class="content">год основания</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="d-flex">
+            <div class="form_img">
+                <img src="img/formimg.png" alt="">
+                <p style="text-align: right; margin-right: 25px;">Уже есть бизнес?<br>
+                    Откройте счет прямо сейчас!</p>
+            </div>
+            <div class="form_inner">
+                <form class="row g-3 needs-validation" novalidate action="#">
+                    <p class="title">Оставьте заявку на открытие счёта, и специалист банка «ВТБ» свяжется с Вами в самое ближайшее время</p>
+                    <input class="form-control" id="validationCustom01" type="text" placeholder="Наименование заявителя*" autocomplete="off" required>                    <div class="invalid-feedback">
+                        Необходимо заполнить поле
+                    </div>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Контактное лицо*" autocomplete="off" required>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить поле </div>
+                    <input type="tel" class="form-control" id="validationCustom01" placeholder="Телефон*" autocomplete="off" required>
+                    <span class="for-error"></span>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить поле </div>
+                    <p style="font-size: 12px; margin: 5px 0;     padding: 0;
+">Просьба указать телефон с кодом города. В формате: (код города) номер телефона</p>
+                    <div class="d-flex">
+                        <input class="checkbox" type="checkbox" id="yes" required>
+                        <label for="yes"></label>
+                        <p style="font-size: 12px">Оставляя заявку, вы принимаете условия Пользовательского соглашения
+                            и Политики конфиденциальности.
+                        </p>
+                    </div>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить поле </div>
+                    <button type="submit">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.sl_slick').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                dots: true
+            });
+        });
+
+        (function() {
+            'use strict'
+
+            // Получите все формы, к которым мы хотим применить пользовательские стили проверки Bootstrap
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Зацикливайтесь на них и предотвращайте отправку
+            Array.prototype.slice.call(forms)
+                .forEach(function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                            
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+
+    </script>
+</body>
+
+</html>
