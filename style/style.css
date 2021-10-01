@@ -29,7 +29,7 @@ body .header .two {
   background-position: right center;
 }
 body .header .three {
-  background: url(../img/three.svg);
+  background-image: url(../img/three.svg);
   background-repeat: no-repeat;
   background-position: right center;
 }
