@@ -22,37 +22,37 @@ body {
             }
         }
          .one {
-             background-image: url(/img/one.svg);
+             background-image: url(../img/one.svg);
              background-repeat: no-repeat;
              background-position: right center;
          }
 
          .two {
-             background-image: url(/img/two.svg);
+             background-image: url(../img/two.svg);
              background-repeat: no-repeat;
              background-position: right center;
          }
 
          .three {
-             background: url(/img/three.svg);
+             background-image: url(../img/three.svg);
              background-repeat: no-repeat;
              background-position: right center;
          }
 
          .four {
-             background-image: url(/img/four.svg);
+             background-image: url(../img/four.svg);
              background-repeat: no-repeat;
              background-position: right center;
          }
 
          .five {
-             background-image: url(/img/five.svg);
+             background-image: url(../img/five.svg);
              background-repeat: no-repeat;
              background-position: right center;
          }
 
          .six {
-             background-image: url(/img/six.svg);
+             background-image: url(../img/six.svg);
              background-repeat: no-repeat;
              background-position: right center;
          }
@@ -75,6 +75,8 @@ body {
                 font-size: 36px;
                 font-weight: 700;
                 line-height: 28px;
+                            margin-bottom: 8px;
+
             }
 
             .content {
@@ -178,7 +180,10 @@ body {
             }
 
             .checkbox:checked + label::before {
-                background: url(/img/check.svg) center center no-repeat;
+                background-image: url(../img/check.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 15px 15px;
             }
 
             .form-control:valid {
@@ -193,6 +198,7 @@ body {
 
             .form-control:invalid:focus {
                 box-shadow: none;
+                background: none;
             }
 
             .form-control:valid:focus {
@@ -206,7 +212,7 @@ body {
 
     .was-validated .form-control:invalid,
     .form-control.is-invalid {
-        background-image: url(/img/error.svg);
+        background-image: url(../img/error.svg);
         background-position: left;
         background-size: auto;
 
