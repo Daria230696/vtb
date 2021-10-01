@@ -68,7 +68,7 @@
 }
 .slick-prev:before {
   content: "←";
-  background-image: url(/untitled/img/prev.svg);
+  background-image: url(/vtb/img/prev.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 7px;
@@ -88,7 +88,7 @@
 }
 .slick-next:before {
   content: "→";
-  background-image: url(/untitled/img/next.svg);
+  background-image: url(/vtb/img/next.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 7px;
