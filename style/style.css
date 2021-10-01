@@ -19,32 +19,32 @@ body .header .d-flex .title-text {
   line-height: 22px;
 }
 body .header .one {
-  background-image: url(/img/one.svg);
+  background-image: url(../img/one.svg);
   background-repeat: no-repeat;
   background-position: right center;
 }
 body .header .two {
-  background-image: url(/img/two.svg);
+  background-image: url(../img/two.svg);
   background-repeat: no-repeat;
   background-position: right center;
 }
 body .header .three {
-  background: url(/img/three.svg);
+  background: url(../img/three.svg);
   background-repeat: no-repeat;
   background-position: right center;
 }
 body .header .four {
-  background-image: url(/img/four.svg);
+  background-image: url(../img/four.svg);
   background-repeat: no-repeat;
   background-position: right center;
 }
 body .header .five {
-  background-image: url(/img/five.svg);
+  background-image: url(../img/five.svg);
   background-repeat: no-repeat;
   background-position: right center;
 }
 body .header .six {
-  background-image: url(/img/six.svg);
+  background-image: url(../img/six.svg);
   background-repeat: no-repeat;
   background-position: right center;
 }
